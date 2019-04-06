@@ -1,0 +1,27 @@
+.jumbotron{
+    border: 2px solid black;
+}
+
+.newTrainForm{
+    font-weight: bold;
+    border: 2px solid black; 
+    position: flexible; 
+}
+.form-group{
+    margin: 15px;
+}
+#inputTrainName{
+    width: 100%;
+}
+#inputDestination{
+    width: 100%;
+}
+#firstTime{
+    width: 100%;
+}
+#tFrequency{
+    width: 100%;
+}
+#submit{
+    margin: 15px;
+}

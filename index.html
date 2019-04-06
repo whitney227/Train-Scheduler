@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Train Schedule</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <!--Bootstrap Jumbotron-->
+      <div class="jumbotron jumbotron-fluid" style="text-align: center">
+        <h1 class="display-4">C'mon Ride It</h1>
+        <p class="lead">It's the Choo Choo Train! </p>    
+      </div>
+
+      <!--Table to Display Train Schedule-->
+      <div class="displayTrainSchedule">
+        <table class="table table-striped" id="trainSchedule">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" id="trainName">Train Name</th>
+              <th scope="col" id="destination">Destination</th>
+              <th scope="col" id="frequency">Frequency</th>
+              <th scope="col" id="nextArrival">Next Arrival</th>
+              <th scope="col" id="minutesAway">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody class="trainInfo">
+          <!--Firebase Data added here-->
+          </tbody>
+        </table>
+      </div>
+
+      <!--User Input-->
+      <div class="newTrain">
+        <div class="formHeading">
+          <h3 class="addTrain">Add Train</h3>
+        </div>
+        <form class="newTrainForm">
+          <div class="form-group">
+            <label for="userTrainName">Train Name</label>
+            <input type="text" value="" id="inputTrainName">
+          </div>
+          <div class="form-group">
+            <label for="userDestination">Destination</label>
+            <input type="text" value="" id="inputDestination">
+          </div>
+          <div class="form-group">
+            <label for="userTrainTime">First Train Time(HH:mm-military time)</label>
+            <input type="text" value="" id="firstTime">
+          </div>
+          <div class="form-group">
+            <label for="userFrequency">Frequency (min)</label>
+            <input type="text" value="" id="tFrequency">
+          </div>
+          <input type="button" value="submit" id="submit">
+        </form> 
+
+      </div>
+
+    
+
+    </div>
+    
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Moment JS -->
+     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+     <!--Firebase JS-->
+     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+   
+     <!--Link My JS file-->
+    <script type="text/javascript" href="assets/train.js"></script>
+
+</body>
+</html>
