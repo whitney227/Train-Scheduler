@@ -1,3 +1,6 @@
+body{
+ 
+}
 .jumbotron{
     border: 2px solid black;
 }
@@ -5,8 +8,9 @@
 .newTrainForm{
     font-weight: bold;
     border: 2px solid black; 
-    position: flexible; 
+    background-color:#e9ecef;
 }
+
 .form-group{
     margin: 15px;
 }
